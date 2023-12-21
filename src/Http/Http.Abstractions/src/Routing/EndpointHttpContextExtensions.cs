@@ -7,6 +7,7 @@ namespace Microsoft.AspNetCore.Http;
 
 /// <summary>
 /// Extension methods to expose Endpoint on HttpContext.
+/// 用于在 HttpContext 上公开 Endpoint 的扩展方法。
 /// </summary>
 public static class EndpointHttpContextExtensions
 {
@@ -19,6 +20,7 @@ public static class EndpointHttpContextExtensions
     {
         ArgumentNullException.ThrowIfNull(context);
 
+        // 使用了 IFeatureCollection
         return context.Features.Get<IEndpointFeature>()?.Endpoint;
     }
 

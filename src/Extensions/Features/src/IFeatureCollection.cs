@@ -31,6 +31,7 @@ public interface IFeatureCollection : IEnumerable<KeyValuePair<Type, object>>
 
     /// <summary>
     /// Retrieves the requested feature from the collection.
+    /// 从集合中检索请求的feature。
     /// </summary>
     /// <typeparam name="TFeature">The feature key.</typeparam>
     /// <returns>The requested feature, or null if it is not present.</returns>

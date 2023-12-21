@@ -42,7 +42,7 @@ public partial class ApplicationBuilder : IApplicationBuilder
     public ApplicationBuilder(IServiceProvider serviceProvider, object server)
     {
         Properties = new Dictionary<string, object?>(StringComparer.Ordinal);
-        ApplicationServices = serviceProvider; // Properties[application.Services] = serviceProvider;
+        ApplicationServices = serviceProvider; // 赋值 Properties[application.Services] = serviceProvider;
 
         SetProperty(ServerFeaturesKey, server);
 

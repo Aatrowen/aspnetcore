@@ -7,6 +7,7 @@ namespace Microsoft.AspNetCore.Http;
 
 /// <summary>
 /// Represents a logical endpoint in an application.
+/// 表示应用程序中的逻辑终结点。
 /// </summary>
 [DebuggerDisplay("{ToString(),nq}")]
 public class Endpoint
@@ -44,6 +45,7 @@ public class Endpoint
 
     /// <summary>
     /// Gets the delegate used to process requests for the endpoint.
+    /// 处理请求的委托
     /// </summary>
     public RequestDelegate? RequestDelegate { get; }
 

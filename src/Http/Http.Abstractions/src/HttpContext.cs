@@ -18,6 +18,7 @@ public abstract class HttpContext
 {
     /// <summary>
     /// Gets the collection of HTTP features provided by the server and middleware available on this request.
+    /// 获取此请求中服务器和中间件提供的 HTTP 功能的集合。
     /// </summary>
     public abstract IFeatureCollection Features { get; }
 

@@ -5,6 +5,7 @@ namespace Microsoft.AspNetCore.Http;
 
 /// <summary>
 /// A function that can process an HTTP request.
+/// 处理HTTP请求的函数
 /// </summary>
 /// <param name="context">The <see cref="HttpContext"/> for the request.</param>
 /// <returns>A task that represents the completion of request processing.</returns>
