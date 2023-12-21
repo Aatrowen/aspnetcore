@@ -13,7 +13,7 @@ namespace Microsoft.AspNetCore.Hosting;
 public interface IWebHostBuilder
 {
     /// <summary>
-    /// Builds an <see cref="IWebHost"/> which hosts a web application.
+    /// Builds an <see cref="IWebHost"/> which hosts a web application（生成一个托管web应用程序的主机）.
     /// </summary>
     IWebHost Build();
 

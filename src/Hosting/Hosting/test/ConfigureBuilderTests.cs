@@ -47,4 +47,12 @@ public class ConfigureBuilderTests
             throw new Exception("Service instantiation failed");
         }
     }
+
+    private class CommonService
+    {
+        public CommonService()
+        {
+            Console.WriteLine(11111);
+        }
+    }
 }

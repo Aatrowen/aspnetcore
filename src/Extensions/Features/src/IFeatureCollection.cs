@@ -8,6 +8,7 @@ namespace Microsoft.AspNetCore.Http.Features;
 
 /// <summary>
 /// Represents a collection of HTTP features.
+/// HTTP功能的集合？
 /// </summary>
 public interface IFeatureCollection : IEnumerable<KeyValuePair<Type, object>>
 {

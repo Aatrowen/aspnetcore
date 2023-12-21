@@ -8,6 +8,7 @@ namespace Microsoft.AspNetCore.Hosting;
 
 /// <summary>
 /// Provides an interface for initializing services and middleware used by an application.
+/// 提供用于初始化应用程序使用的 服务 和 中间件 的接口。
 /// </summary>
 public interface IStartup
 {
