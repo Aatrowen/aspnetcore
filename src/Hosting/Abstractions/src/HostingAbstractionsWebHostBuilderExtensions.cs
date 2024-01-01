@@ -17,6 +17,7 @@ public static class HostingAbstractionsWebHostBuilderExtensions
 {
     /// <summary>
     /// Use the given configuration settings on the web host.
+    /// 后面加的配置会覆盖前面的
     /// </summary>
     /// <param name="hostBuilder">The <see cref="IWebHostBuilder"/> to configure.</param>
     /// <param name="configuration">The <see cref="IConfiguration"/> containing settings to be used.</param>
@@ -45,6 +46,7 @@ public static class HostingAbstractionsWebHostBuilderExtensions
 
     /// <summary>
     /// Specify the assembly containing the startup type to be used by the web host.
+    /// 通过startup程序集的名称指定Web主机的startup程序集。
     /// </summary>
     /// <param name="hostBuilder">The <see cref="IWebHostBuilder"/> to configure.</param>
     /// <param name="startupAssemblyName">The name of the assembly containing the startup type.</param>

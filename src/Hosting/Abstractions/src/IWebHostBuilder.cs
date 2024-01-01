@@ -13,7 +13,8 @@ namespace Microsoft.AspNetCore.Hosting;
 public interface IWebHostBuilder
 {
     /// <summary>
-    /// Builds an <see cref="IWebHost"/> which hosts a web application（生成一个托管web应用程序的主机）.
+    /// Builds an <see cref="IWebHost"/> which hosts a web application
+    /// 生成一个托管web应用程序的主机
     /// </summary>
     IWebHost Build();
 
@@ -46,6 +47,7 @@ public interface IWebHostBuilder
 
     /// <summary>
     /// Get the setting value from the configuration.
+    /// 从配置中获取设置
     /// </summary>
     /// <param name="key">The key of the setting to look up.</param>
     /// <returns>The value the setting currently contains.</returns>
@@ -53,6 +55,7 @@ public interface IWebHostBuilder
 
     /// <summary>
     /// Add or replace a setting in the configuration.
+    /// 在配置中添加或替换设置
     /// </summary>
     /// <param name="key">The key of the setting to add or replace.</param>
     /// <param name="value">The value of the setting to add or replace.</param>

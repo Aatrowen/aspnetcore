@@ -7,7 +7,7 @@ namespace Microsoft.AspNetCore.Hosting;
 
 /// <summary>
 /// Represents a configured web host.
-/// 一个已配置的 Web主机
+/// 表示已经配置好的 Web主机
 /// </summary>
 public interface IWebHost : IDisposable
 {

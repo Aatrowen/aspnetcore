@@ -8,6 +8,7 @@ namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
 /// Defines a class that provides the mechanisms to configure an application's request pipeline.
+/// 定义一个类，该类提供用于配置应用程序请求管道的机制。
 /// </summary>
 public interface IApplicationBuilder
 {
@@ -26,11 +27,13 @@ public interface IApplicationBuilder
 
     /// <summary>
     /// Gets a key/value collection that can be used to share data between middleware.
+    /// 在不同的中间件中分享数据
     /// </summary>
     IDictionary<string, object?> Properties { get; }
 
     /// <summary>
     /// Adds a middleware delegate to the application's request pipeline.
+    /// 添加一个中间件委托到应用程序的请求管道
     /// </summary>
     /// <param name="middleware">The middleware delegate.</param>
     /// <returns>The <see cref="IApplicationBuilder"/>.</returns>
@@ -45,6 +48,7 @@ public interface IApplicationBuilder
 
     /// <summary>
     /// Builds the delegate used by this application to process HTTP requests.
+    /// 生成一个用于应用程序处理HTTP请求的委托
     /// </summary>
     /// <returns>The request handling delegate.</returns>
     RequestDelegate Build();
