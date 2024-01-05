@@ -22,6 +22,15 @@ namespace Microsoft.AspNetCore.Hosting;
 public partial class WebHostTests
 {
     [Fact]
+    public async Task TestTest()
+    {
+        var builder = new WebHostBuilder();
+        builder.UseStartup("Microsoft.AspNetCore.Hosting.Tests");
+        var host = builder.Build();
+        await host.StartAsync();
+    }
+
+    [Fact]
     public async Task WebHostThrowsWithNoServer()
     {
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() => CreateBuilder().Build().StartAsync());
